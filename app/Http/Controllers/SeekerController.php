@@ -11,6 +11,7 @@ class SeekerController extends Controller
             'fname' => 'required|string',
             'lname' => 'required|string',
             'bdate' => 'required|date',
+            'gender'=>'required|in:female,male,none',
             'contact_number' => 'required|numeric',
             'email' => 'required|email|unique:seekers,email',
             'password' => 'required|string'
@@ -20,6 +21,7 @@ class SeekerController extends Controller
             'fname' => $request->fname,
             'lname' => $request->lname,
             'bdate' => $request->bdate,
+            'gender' => $request->gender,
             'contact_number' => $request->contact_number,
             'email' => $request->email,
             'password' => bcrypt($request->password),

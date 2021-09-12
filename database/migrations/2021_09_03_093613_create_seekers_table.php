@@ -18,6 +18,7 @@ class CreateSeekersTable extends Migration
             $table->string('fname');
             $table->string('lname');
             $table->date('bdate');
+            $table->string('gender');
             $table->integer('contact_number');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();

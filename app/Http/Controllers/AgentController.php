@@ -11,7 +11,7 @@ class AgentController extends Controller
             'fname' => 'required|string',
             'lname' => 'required|string',
             'bdate' => 'required|date',
-            'gender' => 'required|string',
+            'gender'=>'required|in:female,male,none',
             'contact_number' => 'required|numeric',
             'broker_name' => 'required|string',
             'broker_license' => 'required|numeric',
